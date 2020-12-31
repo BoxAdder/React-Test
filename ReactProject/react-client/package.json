@@ -1,5 +1,5 @@
 {
-  "name": "kvix-react",
+  "name": "react-client",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",
@@ -16,7 +16,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "concurrently --kill-others \"(cd  ../../NodeJsServer/myServerApp && npm run start)\" \"npm run start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "start": "concurrently --kill-others \"(cd  ./NodeJsServer/myServerApp && npm run start)\" \"(cd  ./ReactProject/kvix-react && npm run start)\"",
+    "start": "concurrently --kill-others \"(cd  ./NodeJsServer/myServerApp && npm run start)\" \"(cd  ./ReactProject/react-client && npm run start)\"",
     "dev": "concurrently --kill-others \"(cd  ../../NodeJsServer/myServerApp && npm run start)\" \"npm run start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+	"myInstall": "npm install && (cd ./NodeJsServer/myServerApp && npm install) && (cd ../../ReactProject/react-client && npm install)"
   },
   "devDependencies": {
     "concurrently": "^5.3.0"
